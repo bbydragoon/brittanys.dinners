@@ -11,10 +11,9 @@ body {
   color: #ffffff;
   min-height: 100vh;
   display: block;
-  padding: 2rem;
+  padding: 100px 2rem; /* <-- 100px top & bottom, 2rem left & right */
   text-align: center;
 }
-
 /* Headline */
 h1 {
   font-size: 3rem;
