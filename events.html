@@ -1,20 +1,81 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+That’s it! After you update both your HTML and CSS files and commit them to GitHub:
+
+Your site will be rocking sleek, modern typography
+
+It’ll still keep the bold black/white/hot pink look
+
+Want to preview a few other font styles or weights? I can give you some options to compare!
+
+You said:
+Actually, let's focus on the events section. I want each dinner to have it's own section, the ability to add a photo (for the menu) and a description section beside the photo
+ChatGPT said:
+Ohhh yeah — now we’re cookin' 🔥
+
+Let’s give each dinner event its own card-style section with:
+
+📸 A photo for the menu
+
+📝 A short description beside the photo
+
+📅 The date or title
+
+We’ll style it clean and responsive.
+
+✅ Step 1: Updated events.html
+Here’s a solid layout you can start with:
+
+html
+Copy
+Edit
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Upcoming Dinner Events</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Upcoming Events</h1>
-  <p>Come through to one of Brittany’s dinners! Here's what's cookin':</p>
+  <h1>Upcoming Dinner Events</h1>
 
-  <ul>
-    <li><strong>April 20:</strong> Pasta Night 🍝</li>
-    <li><strong>May 4:</strong> Taco Takeover 🌮</li>
-    <li><strong>May 18:</strong> Vegan Vibes 🥗</li>
-  </ul>
+  <div class="event">
+    <img src="pasta.jpg" alt="Pasta Night Menu" />
+    <div class="event-info">
+      <h2>🍝 Pasta Night – April 20</h2>
+      <p>A cozy evening of handmade pasta, garlic bread, and a seasonal salad. Come hungry — we’re making it all from scratch.</p>
+    </div>
+  </div>
+
+  <div class="event">
+    <img src="tacos.jpg" alt="Taco Takeover Menu" />
+    <div class="event-info">
+      <h2>🌮 Taco Takeover – May 4</h2>
+      <p>DIY taco bar with fresh toppings, salsas, and agua frescas. It’s a flavor explosion — vegan options included!</p>
+    </div>
+  </div>
+
+  <div class="event">
+    <img src="vegan.jpg" alt="Vegan Vibes Menu" />
+    <div class="event-info">
+      <h2>🥗 Vegan Vibes – May 18</h2>
+      <p>Plant-based everything — colorful bowls, roasted veggies, and mocktails. Bring your appetite and your friends.</p>
+    </div>
+  </div>
 
   <a href="index.html">← Back to Home</a>
 </body>
