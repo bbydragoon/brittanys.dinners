@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #000000; /* black background */
+  color: #ffffff;            /* white text */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@ h1 {
 /* Subtext */
 p {
   font-size: 1.2rem;
-  color: #666;
+  color: #cccccc; /* light gray for softer contrast */
 }
 
 /* Button-style link */
@@ -40,4 +40,5 @@ a {
 }
 
 a:hover {
-  background-color: #005fa3;
+   background-color: #ff69b4; /* hot pink hover for a splash of personality */
+  color: #ffffff;
