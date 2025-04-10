@@ -93,19 +93,3 @@ li {
   color: #ccc;
 }
 
-/* Make it responsive */
-@media (max-width: 600px) {
-  .event {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .event img {
-    margin: 0 0 1rem 0;
-    width: 100%;
-  }
-
-  .event-info {
-    text-align: left;
-  }
-}
